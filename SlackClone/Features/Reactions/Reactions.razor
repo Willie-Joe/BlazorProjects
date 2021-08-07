@@ -1,0 +1,28 @@
+﻿@using Features.Reactions
+
+
+@foreach (KeyValuePair<string, int> reaction in _reactions)
+{
+    <span class="oi @reaction.Key">@reaction.Value&nbsp;</span>
+
+}
+<AddReaction OnAddReaction="@OnAddReaction"/>
+@code
+{
+    private Dictionary<string, int> _reactions = new Dictionary<string, int>()
+    {
+        //{ "oi-star",5},
+        //{ "oi-rain",6}
+    };
+
+
+    public void OnAddReaction(string reactionName)
+    {
+        _reactions[reactionName]=_reactions.GetValueOrDefault(reactionName, 0)+1;
+        InvokeAsync(StateHasChanged);
+
+    }
+}
+
+
+

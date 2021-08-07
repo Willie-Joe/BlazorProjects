@@ -1,0 +1,53 @@
+﻿
+@if (ShowReactions)
+{
+<div class="card">
+    @foreach (string reaction in Reactions)
+    {
+        <span class="oi @reaction"  @onclick="()=>AddReactionToMessage(reaction)"></span>
+    }
+    <button @onclick="()=>ShowReactions=false">Cancel</button>
+
+</div>
+ 
+}
+else
+{
+    <button @onclick="()=>ShowReactions=true">Add Reaction</button>
+
+}
+@ShowReactions
+
+@code
+{
+    protected bool ShowReactions = false;
+    protected List<string> Reactions = new List<string>()
+    {
+        "oi-rain",
+        "oi-star",
+        "oi-bolt"
+    };
+
+
+
+    [Parameter]
+    public EventCallback<string> OnAddReaction { get; set; }
+
+    public int _count { get; set; } = 0;
+
+    public void ShowReaction()
+    {
+        ShowReactions = true;
+    }public void HideReaction()
+    {
+        ShowReactions = false;
+    }
+
+    public async Task AddReactionToMessage(string reactionName)
+    {
+        Console.WriteLine($"clicked on {reactionName}");
+        await OnAddReaction.InvokeAsync(reactionName);
+        ShowReactions = false;
+    }
+}
+

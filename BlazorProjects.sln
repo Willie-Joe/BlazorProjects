@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{52B36E48-6096-41AB-8B2D-0305E2655C31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{52B36E48-6096-41AB-8B2D-0305E2655C31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomodoroTiimer", "PomodoroTiimer\PomodoroTiimer.csproj", "{DCE3785B-6939-4B21-838B-A3EB9AB0CDD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomodoroTiimer", "PomodoroTiimer\PomodoroTiimer.csproj", "{DCE3785B-6939-4B21-838B-A3EB9AB0CDD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlackClone", "SlackClone\SlackClone.csproj", "{1C253066-6D27-485D-97A4-B926C4FFEA93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DCE3785B-6939-4B21-838B-A3EB9AB0CDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCE3785B-6939-4B21-838B-A3EB9AB0CDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCE3785B-6939-4B21-838B-A3EB9AB0CDD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C253066-6D27-485D-97A4-B926C4FFEA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C253066-6D27-485D-97A4-B926C4FFEA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C253066-6D27-485D-97A4-B926C4FFEA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C253066-6D27-485D-97A4-B926C4FFEA93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
