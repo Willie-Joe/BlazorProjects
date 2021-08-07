@@ -1,0 +1,18 @@
+﻿@page "/timer"
+@inherits TimerBase
+
+<div>Timer is running: @IsRunning</div>
+<div class="timer">
+    @remaining
+</div>
+
+<button class="btn btn-primary" disabled="@IsRunning" @onclick="Start">Start</button>
+<button class="btn btn-danger" disabled="@IsStopped" @onclick="Dispose">Stop</button>
+<button class="btn btn-secondary"  @onclick="Reset">Reset</button>
+
+<style>
+   .timer {
+
+        color: @Colour;
+
+</style>
