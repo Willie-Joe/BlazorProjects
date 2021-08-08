@@ -15,9 +15,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartStarter.Server"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartStarter.Shared", "shopping-cart-blazor-wasm\Shared\ShoppingCartStarter.Shared.csproj", "{D620F08C-E450-4424-88BB-70903F67479F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductSearch", "ProductSearch\ProductSearch.csproj", "{73EF1996-D164-4081-8BEF-A97D8551BAD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductSearch", "ProductSearch\ProductSearch.csproj", "{73EF1996-D164-4081-8BEF-A97D8551BAD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationDashboard", "ApplicationDashboard\ApplicationDashboard.csproj", "{93124479-B053-4410-8446-63FC1D3FF710}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationDashboard", "ApplicationDashboard\ApplicationDashboard.csproj", "{93124479-B053-4410-8446-63FC1D3FF710}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShoppingCartStarter", "ShoppingCartStarter", "{3C890777-19F8-47CE-9714-24562AC29B88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleBlog", "SimpleBlog", "{2BAFCDE4-4395-4877-A542-93712B45D703}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASimpleBlogStarter.Client", "a-simple-blog-blazor-wasm\Client\ASimpleBlogStarter.Client.csproj", "{255CEBA6-913D-4926-89D3-92BE8C45FE2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASimpleBlogStarter.Server", "a-simple-blog-blazor-wasm\Server\ASimpleBlogStarter.Server.csproj", "{CCFF27D6-542D-437B-A89F-D326B6E1493C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASimpleBlogStarter.Shared", "a-simple-blog-blazor-wasm\Shared\ASimpleBlogStarter.Shared.csproj", "{DA232E49-4AAD-4292-8F45-F4913D782DC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,9 +67,29 @@ Global
 		{93124479-B053-4410-8446-63FC1D3FF710}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93124479-B053-4410-8446-63FC1D3FF710}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93124479-B053-4410-8446-63FC1D3FF710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255CEBA6-913D-4926-89D3-92BE8C45FE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255CEBA6-913D-4926-89D3-92BE8C45FE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255CEBA6-913D-4926-89D3-92BE8C45FE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255CEBA6-913D-4926-89D3-92BE8C45FE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFF27D6-542D-437B-A89F-D326B6E1493C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFF27D6-542D-437B-A89F-D326B6E1493C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFF27D6-542D-437B-A89F-D326B6E1493C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFF27D6-542D-437B-A89F-D326B6E1493C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA232E49-4AAD-4292-8F45-F4913D782DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA232E49-4AAD-4292-8F45-F4913D782DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA232E49-4AAD-4292-8F45-F4913D782DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA232E49-4AAD-4292-8F45-F4913D782DC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0ABA5EAF-42DA-41AE-9C25-0DD56A46EE74} = {3C890777-19F8-47CE-9714-24562AC29B88}
+		{59E4DE40-9135-4328-9092-781E24E5B615} = {3C890777-19F8-47CE-9714-24562AC29B88}
+		{D620F08C-E450-4424-88BB-70903F67479F} = {3C890777-19F8-47CE-9714-24562AC29B88}
+		{255CEBA6-913D-4926-89D3-92BE8C45FE2C} = {2BAFCDE4-4395-4877-A542-93712B45D703}
+		{CCFF27D6-542D-437B-A89F-D326B6E1493C} = {2BAFCDE4-4395-4877-A542-93712B45D703}
+		{DA232E49-4AAD-4292-8F45-F4913D782DC0} = {2BAFCDE4-4395-4877-A542-93712B45D703}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21832957-327E-4D9A-9029-E7D05C8F5B10}
