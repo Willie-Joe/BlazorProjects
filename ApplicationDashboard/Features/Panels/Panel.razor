@@ -1,0 +1,38 @@
+﻿@{
+    var headingClass = $"card-header {HeadingClass}";
+}
+
+<FullScreenWrapper FullScreen="@_fullScreen">
+    <div class="card">
+        <div class="@headingClass d-flex justify-content-between align-items-center">
+            @Heading <button class="btn btn-light" @onclick="ToggleFullScreen">@ToggleFullScreenText</button>
+        </div>
+        <div class="card-body">
+            @ChildContent
+        </div>
+    </div>
+</FullScreenWrapper>
+
+
+
+
+@code
+{
+    [Parameter]
+    public string Heading { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string HeadingClass { get; set; }
+
+    private bool _fullScreen { get; set; }
+
+    public string ToggleFullScreenText => _fullScreen ? "-" : "+";
+
+    private void ToggleFullScreen()
+    {
+        _fullScreen = !_fullScreen;
+    }
+}

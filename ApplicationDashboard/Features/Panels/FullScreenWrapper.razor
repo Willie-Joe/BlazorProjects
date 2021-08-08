@@ -1,0 +1,40 @@
+﻿@if (FullScreen)
+{
+    <div class="full-screen">
+        <div class="inner">
+            @ChildContent
+        </div>
+    </div>
+}
+else
+{
+    @ChildContent
+}
+
+<style>
+    .full-screen {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 100;
+        background: rgba(240, 240, 240, 0.7);
+    }
+
+        .full-screen .inner {
+            border: 1px solid gray;
+            padding: 6em;
+            height: 100%;
+        }
+</style>
+
+@code
+{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public bool FullScreen { get; set; }
+}
+

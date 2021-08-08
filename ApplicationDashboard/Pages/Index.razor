@@ -1,0 +1,22 @@
+﻿@page "/"
+@using ApplicationDashboard.Features.Panels
+
+
+<div class="container">
+    <div class="card-deck">
+        <Panel heading="Counter" headingClass="text-white bg-info">
+            <Counter />
+        </Panel>
+
+        <Panel Heading="How are you finding Blazor?">
+            <p>We want your feedback!</p>
+            <SurveyPrompt />
+        </Panel>
+        <div class="card-deck mt-4">
+            <ImportantPanel heading="Weather">
+                <FetchData />
+            </ImportantPanel>
+        </div>
+
+    </div>
+</div>
