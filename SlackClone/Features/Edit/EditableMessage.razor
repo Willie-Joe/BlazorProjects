@@ -19,15 +19,16 @@
             </div>
         }
 
-<div class="message"
-     @onclick="ToggleEdit"
-     @onmouseover="ShowOverlay"
-     @onmouseout="HideOverlay">
-    <Message Details="Details" />
-</div>
-<div>    <Reactions /></div>
-        
+        <div class="message"
+             @onclick="ToggleEdit"
+             @onmouseover="ShowOverlay"
+             @onmouseout="HideOverlay">
+            <Message Details="Details" />
+        </div>
+
+
     }
+    <div style="pointer-events:@disableReaction"><Reactions /></div>
 </div>
 
 
@@ -38,6 +39,7 @@
 
     private bool overlayVisible;
     private bool editMode;
+    protected string disableReaction { get { return editMode ? "none" : "visible"; } }
 
     void ShowOverlay()
     {

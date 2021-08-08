@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomodoroTiimer", "PomodoroT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlackClone", "SlackClone\SlackClone.csproj", "{1C253066-6D27-485D-97A4-B926C4FFEA93}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartStarter.Client", "shopping-cart-blazor-wasm\Client\ShoppingCartStarter.Client.csproj", "{0ABA5EAF-42DA-41AE-9C25-0DD56A46EE74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartStarter.Server", "shopping-cart-blazor-wasm\Server\ShoppingCartStarter.Server.csproj", "{59E4DE40-9135-4328-9092-781E24E5B615}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartStarter.Shared", "shopping-cart-blazor-wasm\Shared\ShoppingCartStarter.Shared.csproj", "{D620F08C-E450-4424-88BB-70903F67479F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{1C253066-6D27-485D-97A4-B926C4FFEA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C253066-6D27-485D-97A4-B926C4FFEA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C253066-6D27-485D-97A4-B926C4FFEA93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ABA5EAF-42DA-41AE-9C25-0DD56A46EE74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ABA5EAF-42DA-41AE-9C25-0DD56A46EE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ABA5EAF-42DA-41AE-9C25-0DD56A46EE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ABA5EAF-42DA-41AE-9C25-0DD56A46EE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E4DE40-9135-4328-9092-781E24E5B615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E4DE40-9135-4328-9092-781E24E5B615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E4DE40-9135-4328-9092-781E24E5B615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E4DE40-9135-4328-9092-781E24E5B615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D620F08C-E450-4424-88BB-70903F67479F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D620F08C-E450-4424-88BB-70903F67479F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D620F08C-E450-4424-88BB-70903F67479F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D620F08C-E450-4424-88BB-70903F67479F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

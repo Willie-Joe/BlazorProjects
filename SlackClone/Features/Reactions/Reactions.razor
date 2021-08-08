@@ -6,13 +6,13 @@
     <span class="oi @reaction.Key">@reaction.Value&nbsp;</span>
 
 }
-<AddReaction OnAddReaction="@OnAddReaction"/>
+<AddReaction OnAddReaction="OnAddReaction"/>
 @code
 {
     private Dictionary<string, int> _reactions = new Dictionary<string, int>()
     {
-        //{ "oi-star",5},
-        //{ "oi-rain",6}
+        { "oi-star",5},
+        { "oi-rain",6}
     };
 
 
