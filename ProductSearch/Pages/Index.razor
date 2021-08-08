@@ -1,0 +1,29 @@
+﻿@page "/"
+@inherits IndexBase
+
+<div class="container">
+    <div class="form-group">
+        <input class="form-control"
+               @bind-value="SearchTerm" id="search"
+               placeholder="Product to search for..."
+               @bind-value:event="oninput" />
+    </div>
+
+    <!-- existing code omitted for brevity-->
+    <!-- add this -->
+    @foreach (var item in SearchResults)
+    {
+        <div class="row align-items-center border-bottom">
+            <div class="col-sm">
+                <img src="images/@item.Image" class="mr-3">
+            </div>
+            <div class="col-sm">
+                <h5 class="mt-0">@item.Title</h5>
+            </div>
+            <div class="col-sm">
+                <h5 class="mt-0">@item.Price.ToString("c")</h5>
+            </div>
+        </div>
+    }
+
+</div>

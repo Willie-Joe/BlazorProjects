@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartStarter.Server"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartStarter.Shared", "shopping-cart-blazor-wasm\Shared\ShoppingCartStarter.Shared.csproj", "{D620F08C-E450-4424-88BB-70903F67479F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductSearch", "ProductSearch\ProductSearch.csproj", "{73EF1996-D164-4081-8BEF-A97D8551BAD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D620F08C-E450-4424-88BB-70903F67479F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D620F08C-E450-4424-88BB-70903F67479F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D620F08C-E450-4424-88BB-70903F67479F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73EF1996-D164-4081-8BEF-A97D8551BAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EF1996-D164-4081-8BEF-A97D8551BAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EF1996-D164-4081-8BEF-A97D8551BAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EF1996-D164-4081-8BEF-A97D8551BAD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
